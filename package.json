@@ -1,0 +1,17 @@
+{
+  "name": "genz-fits-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MNIT College E-Commerce Lab Assignment - GenZ Fits (Vélora Contemporary Fashion)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "db:init": "node backend/src/config/initDb.js"
+  },
+  "keywords": ["ecommerce", "college-lab", "react", "express", "postgresql"],
+  "author": "MNIT Student",
+  "license": "ISC"
+}
