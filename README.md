@@ -64,7 +64,6 @@ e-commerce-lab/
 ├── backend/                        # Node.js + Express REST API
 │   ├── package.json
 │   ├── .env.example                # Example environment variables
-│   ├── .env                        # Local configuration
 │   └── src/
 │       ├── server.js               # Express application entry point (Port 5000)
 │       ├── config/
@@ -85,7 +84,6 @@ e-commerce-lab/
     ├── vite.config.js              # Vite server & reverse-proxy configuration
     ├── index.html                  # HTML shell with Google Fonts & metadata
     ├── .env.example
-    ├── .env
     └── src/
         ├── index.css               # Design system & responsive styles
         ├── main.jsx                # React DOM mount point
@@ -127,7 +125,7 @@ e-commerce-lab/
 
 ### Step B: Create the Database
 ```bash
-createdb -U postgres ecommerce_db
+createdb -U postgres genz_fits
 ```
 
 ### Step C: Initialize Schema & Seed Data
@@ -135,7 +133,7 @@ Run the automated initialization runner:
 ```bash
 npm run db:init
 ```
-*(Or manually via psql: `psql -U postgres -d ecommerce_db -f database/schema.sql` and `psql -U postgres -d ecommerce_db -f database/seed.sql`)*
+*(Or manually via psql: `psql -U postgres -d genz_fits -f database/schema.sql` and `psql -U postgres -d genz_fits -f database/seed.sql`)*
 
 ---
 
